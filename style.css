@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(5, 151, 235);
+}
+
+input {
+  height: 100px;
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2rem;
+  top: -37px;
+}
+
+
+
+
+#xpoint {
+
+  position: relative;
+  top: 60px;
+  left: 30px;
+ 
+  cursor: default;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100px;
+  border-radius:12px ;
+}
+#ypoint {
+  position: relative;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100px;
+  top: 60px;
+  cursor: default;
+
+   float: right;
+   left: -30px;
+   border-radius: 12px;
+}
+
+#reset{
+    height: 50px;
+    width: 100px;
+    font-size: 22px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+   
+    float: right;
+
+    right: 123px;
+    top: -265px;
+    border-radius: 12px;
+}
+h3{text-align: center;
+font-size: 3rem;}
+
+
+.container {
+  height: 450px;
+  /* width: 100%; */
+  /* position: relative;
+  top: -100px;
+  left: 335px; */
+  box-sizing: border-box;
+  /* grid-template-columns: repeat(3,auto); */
+  display: grid;
+  /* height: 79vh;*/
+  margin-top: 25px;
+  width: 100vw; 
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px solid black;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 3rem;
+  display: grid
+}
+
+
+/* remove border for edges */
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+  border-left: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+}
+
+
+
+:root {
+  --cell-size: 100px;
+  --color: #81c3fd;
+  --color-set: #0275d8;
+  --l: 10px;
+}
